@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="pricing-table">
+    <!-- First Card -->
+    <div class="containerCard" style="border: 1px solid #585858; border-radius: 10px;"><BR>
+        <h3 >TRY ONE</h3>
+        <div class="subheader">30 days supply</div>
+        <img src="img/1cap.webp" style="width: 35%;">
+        <div class="preco">
+          <span class="simbolo">$</span>89<span class="simbolo">,90</span>
+        </div>
+        <div class="per-bottle">per bottle </div>
+        <a href="#" class="button">Yes! Buy Now <br> Basic Offer</a>
+        <div class="guarantee">
+            <img src="img/creditcards.webp" alt="180 Day Guarantee">
+        </div>
+        <div class="footer-text">180 Day Money-Back Guarantee</div>
+        <div class="footer-text">Total: <span class="strike-through">$179</span> for $89</div>
+        <div class="footer-text">+ Shipping</div><br>
+    </div>
+
+    <!-- Second Card (Popular) -->
+    <div class="containerCard" style="border: 3px solid #006F1A; border-radius: 15px ;">
+        <div class="popular">Most Popular</div>
+        <div class="subheader">90 days supply</div>
+        <img src="img/3cap.webp" style="width: 50%">
+        <div class="preco">
+          <span class="simbolo">$</span>59<span class="simbolo">,90</span>
+        </div>
+        <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+        <a href="#" class="button">Yes! Buy Now <br> Good Offer</a>
+        <div class="guarantee">
+            <img src="img/creditcards.webp" style="width: 63%;" alt="180 Day Guarantee">
+        </div>
+        <div class="footer-text">180 Day Money-Back Guarantee</div>
+        <div class="footer-text">Total: <span class="strike-through">$537</span> for $177</div>
+        <div class="piscando" id="texto" style="">+ Free Shipping</div><br>
+    </div>
+
+    <!-- Third Card (Best Value) -->
+    <div class="containerCard" style="border: 3px solid #e09b1b; border-radius: 15px ;"">
+        <div class="popular" style="background: #e09b1b;">Best Value</div>
+        <div class="subheader">180 days supply</div>
+        <img src="img/6cap.webp" style="width: 50%">
+        <div class="preco">
+          <span class="simbolo">$</span>49<span class="simbolo">,90</span>
+      </div>
+        <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+        <a href="#" class="button">Yes! Buy Now <br> Best Offer</a>
+        <div class="guarantee">
+            <img src="img/creditcards.webp" style="width: 55%;" alt="180 Day Guarantee">
+        </div>
+        <div class="footer-text">180 Day Money-Back Guarantee</div>
+        <div class="footer-text">Total: <span class="strike-through">$1074</span> for $294</div>
+        <div class="piscando" id="texto">+ Free Shipping</div><br>
+    </div>
+</div>
+
+</body>
+<script>
+  const textos = document.querySelectorAll('.piscando');
+  setInterval(() => {
+      textos.forEach(texto => {
+          texto.classList.toggle('faded');
+      });
+  }, 400); // Altera a cada 1 segundo
+</script>
+</html>

@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    width: 100%;
+}
+
+head {
+    display: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+header {
+    height: 153.5px;
+    width: 100%;
+    background-color: #006B1E;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: center;
+    height: 3798.27px;
+}
+
+footer {
+    background-color: #006B1E;
+    height: 56px;
+    width: 100%;
+}
+
+#texto {
+    width: 1140px;
+    height: 53px;
+    position: relative;
+    top: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.3em;
+    letter-spacing: -1.2px;
+    word-spacing: 50px;
+}
+
+#texto1 {
+    color: #000000;
+    font-family: "Arial", Sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: -1.2px;
+}
+
+b {
+    font-weight: bolder;
+}
+
+#container {
+    background-color: #FFFFFF;
+    height: 3818.27px;
+    width: 847px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: -60px -2px 0px 5px;
+    --e-column-margin-right: -2px;
+    --e-column-margin-left: 5px;
+    padding: 40px 40px 40px 40px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#muitoTexto {
+    height: 2080px;
+    width: 767px;
+}
+
+.elementor-heading-title {
+    color: var(--e-global-color-primary);
+    font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-primary-font-weight);
+}
+
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    color: #020202;
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: -1.2px;
+}
+
+.elementor-364 .elementor-element.elementor-element-1dfa3808 .elementor-heading-title {
+    color: #000000;
+    font-family: "Arial", Sans-serif;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 1.3em;
+    letter-spacing: -1.2px;
+}
+
+.textinho h1 {
+    font-size: 29px;
+    line-height: 1.3em;
+}
+
+#images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#textoEspecial {
+    color: #7A7A7A;
+    font-family: "Arial", Sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3em;
+    letter-spacing: -1.2px;
+}
+
+#textoEspecial1 {
+    color: #000000;
+    font-family: "Arial", Sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: -1.2px;
+}
+
+#linha1 {
+    color: #ECECEC;
+    border: solid 0.1px;
+    position: relative;
+    bottom: 5px;
+}
+
+#linha2 {
+    color: #ECECEC;
+    border: solid 0.1px;
+    position: relative;
+    bottom: 15px;
+}
+
+#linha3 {
+    color: #E0E0E0;
+    border: solid 0.1px;
+}
+
+#containerBotao {
+    height: 136px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botaoContainer {
+    height: 96px;
+    width: 757px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#botao {
+    height: 96px;
+    width: 1100px;
+    font-family: "Arial", Sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #00F91F 0%, #009021 100%);
+    border-style: solid;
+    border-color: #F9F9F9;
+    border-radius: 1000px 1000px 1000px 1000px;
+    box-shadow: 0px 7px 0px 0px rgba(17.549093070652194, 136.8234375, 41.92254606273625, 0.99);
+    padding: 30px 30px 30px 30px;
+    text-decoration: none;
+}
+
+#botao span {
+    position: relative;
+    bottom: 5px;
+}
+
+#imagemTicket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagemTicket img {
+    height: 235px;
+    width: 435px;
+}
+
+#textoApenasTemos {
+    height: 51px;
+    text-align: center;
+    color: #333333;
+    font-family: "Arial", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#quantidades-espacos {
+    position: relative;
+    bottom: 5px;
+}
+
+#quantidades {
+    height: 69px;
+    color: #DB1212;
+    flex: 1;
+    display: flex;
+    font-size: 69px;
+    font-weight: 600;
+    line-height: 1;
+    justify-content: center;
+    font-family: Roboto, sans-serif; 
+}
+
+#espacosLivres {
+    height: 47px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 2.5;
+    color: #575C62;
+    font-family: Sans-serif;
+}
+
+#footerLinks {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    font-family: "Arial", Sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+#paragrafoCopyright {
+    width: 504px;
+}
+
+#paragrafoLastNew {
+    width: 140px;
+}
+
+#paragrafoPolitics {
+    width: 349.36px;
+}
+
+#paragrafoCopyright p{
+    color: #FFFFFF;
+    font-family: "Arial", Sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+#paragrafoLastNew p {
+    text-align: left;
+    color: #FFFFFF;
+    font-family: "Arial", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: .9rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+

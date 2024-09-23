@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Header */
+.header {
+    background: linear-gradient(180deg, #089948 0%, #003618 100%);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.header p {
+    font-size: 1.2em;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Timer */
+.time-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000007d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 120px;
+}
+
+.time-box span {
+    font-size: 36px;
+}
+
+.time-label {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Pricing Section */
+.pricing-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+/* Guarantee Section */
+.guarantee-section {
+    background-color: #fefefe;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.guarantee-section img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+.guarantee-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.guarantee-section p {
+    font-size: 1.2em;
+}
+/* Testimonials Section */
+.testimonials-section {
+    padding: 40px 20px;
+    background-color: #f7f9fc;
+    text-align: center;
+}
+.testimonials-section h2 {
+    font-size: 2em;
+    color: #3c763d;
+    margin-bottom: 30px;
+}
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.testimonial {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.testimonial p {
+    font-size: 1.1em;
+    color: #333;
+}
+/* Ingredients Section */
+.ingredients-section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+.ingredients-section ul {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+.ingredients-section ul li {
+    margin-bottom: 10px;
+}
+/* FAQ Section */
+.faq-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.faq-section h2 {
+    text-align: center;
+    color: #3c763d;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.footer p {
+    font-size: 1em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .pricing-card, .testimonial {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2em;
+    }
+    .price {
+        font-size: 2em;
+    }
+    .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin-top: 50px;
+    gap: 10px; /* Controla o espaçamento entre os containers */
+}
+
+
+.containerCard {
+    margin: 0;
+    background-color: #E9E9E9;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    max-width: 300px;
+}
+
+body {
+    margin: 0; /* Remove margens padrão do corpo da página */
+    padding: 0;
+    font-family: Sora;
+    background-color: #fff;
+    font-family: 'Sora', sans-serif; /* Aplicando a fonte Sora ao corpo do documento */
+}
+
+.product-cart button{
+  border: 0;
+  border-radius: 0 0 10px 10px;
+  color: #f5f6fa;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 1em;
+  text-transform: uppercase;
+  transition: all linear .3s;
+  width: 100%;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-card.popular {
+    border-top: 5px solid #2f6f31;
+}
+
+.pricing-card.best-value {
+    border-top: 5px solid #d9a026;
+}
+
+.popular {
+    background: linear-gradient(to bottom, #008000, #004d00);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 8px 8px 0 0;
+    text-transform: uppercase;
+}
+
+
+.subheader {
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 46px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000;
+}
+
+.per-bottle {
+    font-size: 14px;
+    color: #666;
+}
+
+.bonuses {
+    font-size: 12px;
+    color: #333;
+    margin: 5px 0 10px 0;
+}
+
+.button {
+    background-image: linear-gradient(180deg, #FFBE00 0%, #D8A100 100%);
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+.guarantee {
+    margin-top: 10px;
+}
+
+.guarantee img {
+    width: 100px;
+}
+
+.footer-text {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.footer-text .strike-through {
+    text-decoration: line-through;
+    color: red;
+}
+
+.free-shipping {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.credit-cards img {
+    width: 120px;
+}
+
+.container img {
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem dentro do container */
+}
+
+.piscando {
+    font-size: 24px;
+    color: #074703; /* Cor do texto */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 10px;
+}
+.piscando.faded {
+    opacity: 0;
+}
+
+.preco {
+    font-family: 'Sora', sans-serif; /* Aplicando a fonte Sora ao preço */
+    font-size: 70px; /* Tamanho da fonte para o valor */
+    font-weight: 600;
+    color: #000;
+}
+.preco .simbolo {
+    font-size: 0.5em; /* Tamanho reduzido do símbolo $ */
+    position: relative;
+}
+.promo-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(180deg, #089948 0%, #003618 100%);
+
+}
+.promo-banner-content {
+    text-align: left;
+}
+.promo-shipping-info {
+    font-weight: bold;
+}
+.promo-percentage {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.promo-timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promo-timer-icon {
+    margin-right: 10px;
+    font-size: 40px;
+}
+.promo-timer-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* Timer Styles */
+.promo-time-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 120px;
+}
+.promo-time-value {
+    font-size: 36px;
+}
+.promo-time-label {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.quality-assurance {
+    text-align: center;
+    padding: 40px;
+}
+
+.quality-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.quality-description {
+    font-size: 17px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+.quality-title {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
+.discount {
+    padding: 20px;
+    color: #000;
+    font-size: 20px;
+    background: linear-gradient(180deg, #089948 0%, #003618 100%);
+
+}
+
+.discount-time-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    background-color: #002A0A;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.image-gallery {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-item img {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-ultimate {
+    width: 70%;
+    
+}
+
+
+.column-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.inner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.column-50 {
+    width: 48%;
+}
+
+.heading-container {
+    margin-bottom: 20px;
+}
+
+.heading-title {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.widget-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ultimate-text {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.ultimate-text-down {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.ingredients-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.ingredient-card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.ingredient-card:hover {
+    transform: translateY(-10px);
+}
+
+.ingredient-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.ingredient-card h3 {
+    color: #000;
+    margin: 15px 0 10px;
+}
+
+.ingredient-card p {
+    color: #666;
+    font-size: 14px;
+}
