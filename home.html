@@ -84,10 +84,14 @@
     </div>
 <!-- Página da garantia -->
     <div class="container" style="margin-top: 60px;">
-        <img src="img/garanted.webp" style="width: 100%;">
-        <div class="footer-text" style="text-align: center;"><b>180-DAY Money Back Guarantee</b> - Just send us the bottles, even if they're</div>
+        <div class="garanted-img">
+            <img class="img-responsive" src="img/garanted.webp">
+        </div>
+        <div class="footer-text garanted-img" style="text-align: center; margin-top: 25px;"><b>180-DAY Money Back Guarantee</b> - Just send us the bottles, even if they're</div>
          <div class="footer-text" style="text-align: center;">empty and get a complete refund, no questions asked.</div>
-        <img src="img/stamps.webp" style="width: 39%; margin-bottom: 60px; margin-top: 20px;">
+         <div class="garanted-img" style="margin-top: 20px; margin-bottom: 20px;">
+            <img class="img-responsive"src="img/stamps.webp" >
+        </div>
     </div>
 
     <!-- Frete Gratis -->
@@ -120,7 +124,7 @@
                 </div>
 
                 <!-- Title -->
-                <h1 class="quality-title" style="text-align: center;">100% Quality Assurance</h1>
+                <h1 class="quality-title" style="text-align: center; font-weight: bold;">100% Quality Assurance</h1>
 
                 <!-- Description -->
                 <div class="container" style="text-align: center; width: 50%; font-size: 15px; margin-top: 20px;">
@@ -130,13 +134,15 @@
                 </div>
 
                 <!-- Certification Icons -->
-                <img src="img/usa.webp" style="width: 39%; margin-bottom: 60px; margin-top: 20px;">
+                <div class="garanted-img">
+                    <img class="img-responsive" src="img/usa.webp" style="margin-bottom: 60px; margin-top: 20px;">
+                </div>
             </div>
     </div>
 
     <!-- //desconto -->
     <div class="discount" style="background: #E6E6E6;">
-        <div class="quality-title">Claim Your Discounted Sugar Detox®<br> Below While Supplies Last</div>
+        <div class="quality-title" style="font-weight: bold;">Claim Your Discounted Sugar Detox®<br> Below While Supplies Last</div>
         <div class="timer" style="margin-top: 20px;">
             <div class="discount-time-box" style="color: #fff;">
                 <span id="minutes">10</span>
@@ -152,16 +158,22 @@
 
     <!-- Prova Social -->
     <div class="container" style="margin-top: 60px;">
-        <img src="img/garanted.webp" style="width: 39%;">
-        <div class="footer-text" style="text-align: center;"><b>180-DAY Money Back Guarantee</b> - Just send us the bottles, even if they're</div>
-         <div class="footer-text" style="text-align: center;">empty and get a complete refund, no questions asked.</div>
-        <img src="img/stamps.webp" style="width: 39%; margin-bottom: 60px; margin-top: 20px;">
+        <div class="garanted-img">
+            <img class="img-responsive" src="img/garanted.webp">
+        </div>
+        <div class="footer-text garanted-img" style="text-align: center; margin-top: 25px;"><b>180-DAY Money Back Guarantee</b> - Just send us the bottles, even if they're</div>
+            <div class="footer-text" style="text-align: center;">empty and get a complete refund, no questions asked.</div>
+            <div class="garanted-img" style="margin-top: 20px; margin-bottom: 20px;">
+            <img class="img-responsive"src="img/stamps.webp" >
+        </div>
+        
         <div class="quality-title">REAL RESULTS IN 162 COUNTRIES</div>
         <div class="footer-text" style="text-align: center; font-size: 20px; color: #000;">There are now almost 33 THOUSAND ex-diabetics thanks to our formula.</div>
         <div class="container" style="max-width: 70%;">
-        <br><div class="image-gallery">
+        <br>
+        <div class="image-gallery">
             <div class="image-item">
-                <img src="img/testimonial01.webp" >
+                <img src="img/testimonial01.webp">
             </div>
             <div class="image-item">
                 <img src="img/testimonial02.webp" alt="Imagem 2">
@@ -705,9 +717,18 @@
         document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
         document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
     }, 1000);
+
+    function ativarComponentes() {
+    const componentes = document.querySelectorAll('.component');
+    componentes.forEach(componente => {
+        componente.classList.remove('hidden'); // Remove a classe 'hidden' para mostrar os componentes
+    });
+}
+
+const tempoEspera = (40 * 60 + 50) * 1000; // 40 minutos e 50 segundos
+setTimeout(ativarComponentes, tempoEspera);
 </script>
 
-<!-- COLOCAR SCRITPS DE PIXEL AQUI -->
 
 </html>
 
