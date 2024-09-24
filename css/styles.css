@@ -181,6 +181,7 @@
 }
 
 .pricing-table {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente os itens */
     align-items: center; /* Centraliza verticalmente os elementos */
@@ -341,6 +342,7 @@ body {
     position: relative;
 }
 .promo-banner {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -545,7 +547,6 @@ body {
 }
 
 .faq-container {
-    width: 400px;
     background-color: #319B54;
     padding: 20px;
     border-radius: 15px;
@@ -706,9 +707,18 @@ h2 {
     color: #5A5A5A"
 }
 
+
 .column {
     flex: 1;
     padding: 10px;
+}
+
+.container-faq {
+    text-align: center;
+    display: flex;
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .reference-list {
