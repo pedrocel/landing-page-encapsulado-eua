@@ -462,6 +462,9 @@ body {
     
 }
 
+.hidden {
+    display: none; /* Oculta os elementos */
+}
 
 .column-container {
     max-width: 800px;
