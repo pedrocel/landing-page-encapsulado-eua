@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Detox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="header">
+      <img src="path_to_your_image.png" alt="Center Image">
+        <div class="headline">Claim Your Discounted Sugar Detox® Below While Supplies Last</div>
+        <!-- COLOCAR O SCRIPT DO VTURB AQUI -->
+        <div class="timer">
+            <div class="time-box">
+                <span id="minutes">10</span>
+                <div class="time-label">Minutes</div>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <div class="time-label">Seconds</div>
+            </div>
+        </div>
+    </div>
+<!-- Página dos preços -->
+    <div class="pricing-table">
+        <!-- First Card -->
+        <div class="containerCard" style="border: 1px solid #585858; border-radius: 10px;"><BR>
+            <h3 >TRY ONE</h3>
+            <div class="subheader">30 days supply</div>
+            <img src="img/1cap.webp" style="width: 35%;">
+            <div class="preco">
+              <span class="simbolo">$</span>89<span class="simbolo">,90</span>
+            </div>
+            <div class="per-bottle">per bottle </div>
+            <a href="#" class="button">Yes! Buy Now <br> Basic Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$179</span> for $89</div>
+            <div class="footer-text">+ Shipping</div><br>
+        </div>
+    
+        <!-- Second Card (Popular) -->
+        <div class="containerCard" style="border: 3px solid #006F1A; border-radius: 15px ;">
+            <div class="popular">Most Popular</div>
+            <div class="subheader">90 days supply</div>
+            <img src="img/3cap.webp" style="width: 50%">
+            <div class="preco">
+              <span class="simbolo">$</span>59<span class="simbolo">,90</span>
+            </div>
+            <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+            <a href="#" class="button">Yes! Buy Now <br> Good Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" style="width: 63%;" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$537</span> for $177</div>
+            <div class="piscando" id="texto" style="">+ Free Shipping</div><br>
+        </div>
+        
+    
+        <!-- Third Card (Best Value) -->
+        <div class="containerCard" style="border: 3px solid #e09b1b; border-radius: 15px ;"">
+            <div class="popular" style="background: #e09b1b;">Best Value</div>
+            <div class="subheader">180 days supply</div>
+            <img src="img/6cap.webp" style="width: 50%">
+            <div class="preco">
+              <span class="simbolo">$</span>49<span class="simbolo">,90</span>
+          </div>
+            <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+            <a href="#" class="button">Yes! Buy Now <br> Best Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" style="width: 55%;" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$1074</span> for $294</div>
+            <div class="piscando" id="texto">+ Free Shipping</div><br>
+        </div>
+    </div>
+<!-- Página da garantia -->
+    <div class="container" style="margin-top: 60px;">
+        <img src="img/garanted.webp" style="width: 39%;">
+        <div class="footer-text" style="text-align: center;"><b>180-DAY Money Back Guarantee</b> - Just send us the bottles, even if they're</div>
+         <div class="footer-text" style="text-align: center;">empty and get a complete refund, no questions asked.</div>
+        <img src="img/stamps.webp" style="width: 39%; margin-bottom: 60px; margin-top: 20px;">
+    </div>
+
+    <!-- Frete Gratis -->
+    <div class="promo-banner">
+        <div class="promo-banner-content">
+            <div>Order 6 Bottles Now</div>
+            <div class="promo-shipping-info">& Get FREE SHIPPING TOO!</div>
+            <div class="promo-percentage">96% Of Customers Order 6 Bottles (Recommended)</div>
+        </div>
+        <div class="promo-timer">
+            <div class="promo-timer-icon">
+                <img src="img/frete.webp" alt="Shipping Icon" style="width: 100px">
+            </div>
+            <div class="promo-time-box">
+                <span class="promo-time-value" id="minutes">10</span>
+                <div class="promo-time-label">Minutes</div>
+            </div>
+            <div class="promo-time-box">
+                <span class="promo-time-value" id="seconds">00</span>
+                <div class="promo-time-label">Seconds</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 100% qualidade -->
+     <div class="container">
+            <div class="quality-container">
+                <!-- Star Ratings -->
+                <div class="stars" style="text-align: center; font-size: 45px; margin-top: 20px;">⭐⭐⭐⭐⭐
+                </div>
+
+                <!-- Title -->
+                <h1 class="quality-title" style="text-align: center;">100% Quality Assurance</h1>
+
+                <!-- Description -->
+                <div class="container" style="text-align: center; width: 50%; font-size: 15px; margin-top: 20px;">
+                    Sugar Detox is manufactured to standards above and beyond what is required by the FDA and Good Manufacturing Standards.
+                    We 3rd-party test every batch to make sure you get only the highest quality product possible.
+                    Our name is on the line and we stand by every bottle of Sugar Detox we sell.
+                </div>
+
+                <!-- Certification Icons -->
+                <img src="img/usa.webp" style="width: 39%; margin-bottom: 60px; margin-top: 20px;">
+            </div>
+    </div>
+
+    <!-- //desconto -->
+    <div class="discount" style="background: #E6E6E6;">
+        <div class="quality-title">Claim Your Discounted Sugar Detox®<br> Below While Supplies Last</div>
+        <div class="timer" style="margin-top: 20px;">
+            <div class="discount-time-box" style="color: #fff;">
+                <span id="minutes">10</span>
+                <div class="time-label">Minutes</div>
+            </div>
+            <div class="discount-time-box" style="color: #fff; margin-bottom: 20px;">
+                <span id="seconds">00</span>
+                <div class="time-label">Seconds</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Prova Social -->
+    <div class="container" style="margin-top: 60px;">
+        <img src="img/garanted.webp" style="width: 39%;">
+        <div class="footer-text" style="text-align: center;"><b>180-DAY Money Back Guarantee</b> - Just send us the bottles, even if they're</div>
+         <div class="footer-text" style="text-align: center;">empty and get a complete refund, no questions asked.</div>
+        <img src="img/stamps.webp" style="width: 39%; margin-bottom: 60px; margin-top: 20px;">
+        <div class="quality-title">REAL RESULTS IN 162 COUNTRIES</div>
+        <div class="footer-text" style="text-align: center; font-size: 20px; color: #000;">There are now almost 33 THOUSAND ex-diabetics thanks to our formula.</div>
+        <div class="container" style="max-width: 70%;">
+        <br><div class="image-gallery">
+            <div class="image-item">
+                <img src="img/testimonial01.webp" >
+            </div>
+            <div class="image-item">
+                <img src="img/testimonial02.webp" alt="Imagem 2">
+            </div>
+            <div class="image-item">
+                <img src="img/testimonial03.webp" alt="Imagem 3">
+            </div>
+            <div class="image-item">
+                <img src="img/testimonial04.webp" alt="Imagem 4">
+            </div>
+        </div><br><Br></div>
+    </div>
+
+    <!-- Ultimate Formula -->
+    <div class="discount" style="background: #f1f1f1;">
+        <div class="column-container" style=" background-color: #fff; border-radius: 20px;">
+            <div class="widget-wrap">
+                <section class="inner-section">
+                    <div class="container" style="display: flex;">
+                        <!-- Primeira coluna (Texto) -->
+                        <div class="column-50">
+                            <div class="widget-wrap">
+                                <div class="widget-heading">
+                                    <div class="heading-container">
+                                        <div class="quality-title ultimate-text" style="font-size: 30px; text-align: initial; font-weight: 400; text-transform: uppercase;">
+                                            The <span style="color: #318C59">ultimate formula</span> to STOP <Br>your
+                                            <span style="color: #318C59">glucose meter</span> and reverse<Br> diabetes
+                                            <span style="color: #318C59">FOREVER!</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="ultimate-text-down">
+                                    Sugar Detox has already helped over 30,000 people control their blood sugar levels
+                                            and completely reverse diabetes in more than 163 countries.<br><br>
+                                            In a completely homemade, easy, quick, and 100% natural way.<br><br>
+                                            20 drops of our formula upon waking up is all you need to activate the sugar sponge
+                                            in your blood and get rid of this disease once and for all!
+                                </div>
+    
+                            </div>
+                        </div>
+        
+                        <!-- Segunda coluna (Imagem) -->
+                        <div class="column-50">
+                            <div class="widget-wrap">
+                                <div class="widget-image">
+                                    <div class="image-container">
+                                        <img loading="lazy" decoding="async" width="800" height="673"
+                                            src="https://sugardetox.online/wp-content/uploads/2024/07/Banner-3-frascos-1024x861.webp"
+                                            alt="Sugar Detox Bottles"
+                                            srcset="https://sugardetox.online/wp-content/uploads/2024/07/Banner-3-frascos-1024x861.webp 1024w,   
+                                                    https://sugardetox.online/wp-content/uploads/2024/07/Banner-3-frascos-300x252.webp 300w,   
+                                                    https://sugardetox.online/wp-content/uploads/2024/07/Banner-3-frascos-768x646.webp 768w,   
+                                                    https://sugardetox.online/wp-content/uploads/2024/07/Banner-3-frascos-1536x1292.webp 1536w,   
+                                                    https://sugardetox.online/wp-content/uploads/2024/07/Banner-3-frascos-2048x1722.webp 2048w"
+                                            sizes="(max-width: 800px) 100vw, 800px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Ingredientes -->
+    <section class="ingredients-section">
+        <h2 class="section-title" style="font-weight: 500;">
+            Inside each bottle of Sugar Detox, you will find <b>carefully selected <br>
+             ingredients</b> that will control and reverse your diabetes.
+        </h2>
+        <div class="ingredients-grid">
+            <div class="ingredient-card">
+                <h3 style="color: #318C59;">PROPHET'S MELON</h3>
+                <img src="img/semente01.webp" style="width: 100%; height: 143px;" alt="Prophet's Melon">
+                <div class="footer-text">Protects your body from diabetes.</div>
+            </div>
+            <div class="ingredient-card">
+                <h3 style="color: #318C59;">INDIAN ROOT</h3>
+                <img src="img/semente02.webp" style="width: 100%; height: 143px;" alt="Indian Root">
+                <div class="footer-text">Causes a true detox in your body. Detoxifies and eliminates inflammation caused by diabetes.</div>
+            </div>
+            <div class="ingredient-card">
+                <h3 style="color: #318C59;">CORUMBOSUM</h3>
+                <img src="img/semente03.webp" style="width: 100%; height: 143px;" alt="Corumbosum">
+                <div class="footer-text">Activates the sugar sponge in your blood and expels excess sugar through urine.</div>
+            </div>
+            <div class="ingredient-card">
+                <h3 style="color: #318C59;">RASPBERRY KETONES</h3>
+                <img src="img/semente04.webp" style="width: 100%; height: 143px;" alt="Raspberry Ketones">
+                <div class="footer-text">Boosts metabolism and aids in weight loss, helping to regulate blood sugar levels.</div>
+            </div>
+            <div class="ingredient-card">
+                <h3 style="color: #318C59;">XYLITOL</h3>
+                <img src="img/semente05.webp" style="width: 100%; height: 143px;" alt="Xylitol">
+                <div class="footer-text">A natural sweetener that reduces blood sugar spikes and promotes oral health.</div>
+            </div>
+            <div class="ingredient-card">
+                <h3 style="color: #318C59;">MACA ROOT</h3>
+                <img src="img/semente06.webp" style="width: 100%; height: 143px;" alt="Maca Root">
+                <div class="footer-text">Enhances energy and stamina, supporting overall hormonal balance and reducing stress.</div>
+            </div>
+            <div class="ingredient-card">
+                <h3 style="color: #318C59;">ASIAN GINSENG ROOT</h3>
+                <img src="img/semente07.webp" style="width: 100%; height: 143px;" alt="Asian Ginseng Root">
+                <div class="footer-text">Improves insulin sensitivity and reduces blood sugar levels, enhancing overall health and vitality.</div>
+            </div>
+            <div class="ingredient-card">
+                <h3 style="color: #318C59;">ASTRAGALUS ROOT</h3>
+                <img src="img/semente08.webp" style="width: 100%; height: 143px;" alt="Astragalus Root">
+                <div class="footer-text">Strengthens the immune system and supports kidney health, aiding in the management of diabetes.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultimate Formula -->
+    <div class="discount" style="background: #f1f1f1;">
+        <div class="column-container" style=" background-color: #fff; border-radius: 20px;">
+            <div class="widget-wrap">
+                <section class="inner-section">
+                    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+                        <!-- Primeira coluna (Texto) -->
+                        <div class="column-50">
+                            <div class="widget-wrap">
+                                <div class="widget-heading">
+                                    <div class="heading-container">
+                                        <div class="quality-title ultimate-text" style="font-size: 30px; text-align: initial; font-weight: 400; text-transform: uppercase;">
+                                            By ordering your 6-bottle kit, <Br>you also get free shipping!
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="ultimate-text-down">
+                                    Over 88% of our customers order the 6-bottle kit (the option we recommend).<Br><Br>
+                                        Additionally, you have a 6-month guarantee. That's 180 days of guarantee! Your satisfaction or 100% of your money back.
+                                </div>
+    
+                            </div>
+                        </div>
+        
+                        <!-- Segunda coluna (Imagem) -->
+                        <div class="column-50">
+                            <div class="widget-wrap">
+                                <div class="widget-image">
+                                    <div class="image-container">
+                                        <img loading="lazy" decoding="async" width="800" height="673"
+                                            src="https://sugardetox.online/wp-content/uploads/2024/07/Banner-6-frascos-1024x861.webp"
+                                            alt="Sugar Detox Bottles"
+                                            srcset="https://sugardetox.online/wp-content/uploads/2024/07/Banner-6-frascos-1024x861.webp 1024w,   
+                                                    https://sugardetox.online/wp-content/uploads/2024/07/Banner-6-frascos-300x252.webp 300w,   
+                                                    https://sugardetox.online/wp-content/uploads/2024/07/Banner-6-frascos-768x646.webp 768w,   
+                                                    https://sugardetox.online/wp-content/uploads/2024/07/Banner-6-frascos-1536x1292.webp 1536w,   
+                                                    https://sugardetox.online/wp-content/uploads/2024/07/Banner-6-frascos-2048x1722.webp 2048w"
+                                            sizes="(max-width: 800px) 100vw, 800px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+            <!-- Página dos preços -->
+
+        <h2 class="section-title" style="font-weight: 500; margin-top: 30px;">Get your discounted Sugar Detox below.</h2><Br>
+        <div class="pricing-table" style="margin-top: -30px;">
+        <!-- First Card -->
+        <div class="containerCard" style="border: 1px solid #585858; border-radius: 10px;"><BR>
+            <h3 >TRY ONE</h3>
+            <div class="subheader">30 days supply</div>
+            <img src="img/1cap.webp" style="width: 35%;">
+            <div class="preco">
+              <span class="simbolo">$</span>89<span class="simbolo">,90</span>
+            </div>
+            <div class="per-bottle">per bottle </div>
+            <a href="#" class="button">Yes! Buy Now <br> Basic Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$179</span> for $89</div>
+            <div class="footer-text">+ Shipping</div><br>
+        </div>
+    
+        <!-- Second Card (Popular) -->
+        <div class="containerCard" style="border: 3px solid #006F1A; border-radius: 15px ;">
+            <div class="popular">Most Popular</div>
+            <div class="subheader">90 days supply</div>
+            <img src="img/3cap.webp" style="width: 50%">
+            <div class="preco">
+              <span class="simbolo">$</span>59<span class="simbolo">,90</span>
+            </div>
+            <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+            <a href="#" class="button">Yes! Buy Now <br> Good Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" style="width: 63%;" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$537</span> for $177</div>
+            <div class="piscando" id="texto" style="">+ Free Shipping</div><br>
+        </div>
+        
+    
+        <!-- Third Card (Best Value) -->
+        <div class="containerCard" style="border: 3px solid #e09b1b; border-radius: 15px ;"">
+            <div class="popular" style="background: #e09b1b;">Best Value</div>
+            <div class="subheader">180 days supply</div>
+            <img src="img/6cap.webp" style="width: 50%">
+            <div class="preco">
+              <span class="simbolo">$</span>49<span class="simbolo">,90</span>
+          </div>
+            <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+            <a href="#" class="button">Yes! Buy Now <br> Best Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" style="width: 55%;" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$1074</span> for $294</div>
+            <div class="piscando" id="texto">+ Free Shipping</div><br>
+        </div>
+    </div>
+
+
+    <!-- Página da garantia -->
+    <div class="container" style="margin-top: 60px;" >
+        <img src="img/garanted.webp" style="width: 39%;">
+        <div class="footer-text" style="text-align: center;"><b>180-DAY Money Back Guarantee</b> - Just send us the bottles, even if they're</div>
+         <div class="footer-text" style="text-align: center;">empty and get a complete refund, no questions asked.</div>
+        <img src="img/stamps.webp" style="width: 39%; margin-bottom: 60px; margin-top: 20px;">
+    </div>
+
+    <div class="container">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Does Sugar Detox really work for me?</span>
+                        <span class="accordion-icon">▾</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sugar Detox works to control your blood sugar levels and restores energy over time. It targets specific areas in the body to improve metabolism.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>What kind of results can I expect from Sugar Detox?</span>
+                        <span class="accordion-icon">▾</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sugar Detox not only helps control your blood sugar levels but also restores your energy and zest for life. As your body adapts to the ingredients, you will notice reduced hunger, increased energy, and improved blood sugar readings.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>How long do I need to wait to see results?</span>
+                        <span class="accordion-icon">▾</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Most people start noticing improvements within the first few weeks, with full results visible after 2-3 months.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>What is the best way to take Sugar Detox?</span>
+                        <span class="accordion-icon">▾</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>It is recommended to take Sugar Detox every morning with 20 drops mixed in water for the best results.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>What if Sugar Detox doesn't work for me?</span>
+                        <span class="accordion-icon">▾</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>If for any reason Sugar Detox does not work for you, we offer a 100% money-back guarantee.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Is my purchase secure? Do I need to make any additional payments?</span>
+                        <span class="accordion-icon">▾</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Your purchase is completely secure and there are no additional payments required.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="benefits-section" style="width: 70%;">
+        <div class="text-content">
+            <div class="ultimate-text">Are You Struggling with Lack of Energy, Feeling Unmotivated to Enjoy Life, and Mental Fog?</div><br>
+            <div class="ultimate-text-down">Control your blood sugar levels, increase your energy throughout the day, maintain a healthy mind, and ensure many more years of life alongside your loved ones.</div><br>
+            <div class="ultimate-text-down">The sugar sponge in your blood activated by Sugar Detox is the key to regaining control of your health and life, and reversing type 2 diabetes forever!</div><Br>
+            <a href="#" class="cta-button">
+                <span class="icon">🛒</span> <span style="color: #000; font-weight: bold;">WANT MY KIT</span> 
+            </a>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <span>✔</span>
+                <p>100% Natural Formula</p>
+            </div>
+            <div class="benefit-item">
+                <span>✔</span>
+                <p>Carefully Selected Ingredients</p>
+            </div>
+            <div class="benefit-item">
+                <span>✔</span>
+                <p>Easy to Take</p>
+            </div>
+            <div class="benefit-item">
+                <span>✔</span>
+                <p>No Harmful Side Effects to Your Health</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- Página dos preços -->
+     <h2 class="section-title" style="font-weight: 500; margin-top: 30px;">Get your discounted Sugar Detox below.</h2><Br>
+     <div class="pricing-table" style="margin-top: -30px;">
+        <!-- First Card -->
+        <div class="containerCard" style="border: 1px solid #585858; border-radius: 10px;"><BR>
+            <h3 >TRY ONE</h3>
+            <div class="subheader">30 days supply</div>
+            <img src="img/1cap.webp" style="width: 35%;">
+            <div class="preco">
+              <span class="simbolo">$</span>89<span class="simbolo">,90</span>
+            </div>
+            <div class="per-bottle">per bottle </div>
+            <a href="#" class="button">Yes! Buy Now <br> Basic Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$179</span> for $89</div>
+            <div class="footer-text">+ Shipping</div><br>
+        </div>
+    
+        <!-- Second Card (Popular) -->
+        <div class="containerCard" style="border: 3px solid #006F1A; border-radius: 15px ;">
+            <div class="popular">Most Popular</div>
+            <div class="subheader">90 days supply</div>
+            <img src="img/3cap.webp" style="width: 50%">
+            <div class="preco">
+              <span class="simbolo">$</span>59<span class="simbolo">,90</span>
+            </div>
+            <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+            <a href="#" class="button">Yes! Buy Now <br> Good Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" style="width: 63%;" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$537</span> for $177</div>
+            <div class="piscando" id="texto" style="">+ Free Shipping</div><br>
+        </div>
+        
+    
+        <!-- Third Card (Best Value) -->
+        <div class="containerCard" style="border: 3px solid #e09b1b; border-radius: 15px ;"">
+            <div class="popular" style="background: #e09b1b;">Best Value</div>
+            <div class="subheader">180 days supply</div>
+            <img src="img/6cap.webp" style="width: 50%">
+            <div class="preco">
+              <span class="simbolo">$</span>49<span class="simbolo">,90</span>
+          </div>
+            <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+            <a href="#" class="button">Yes! Buy Now <br> Best Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" style="width: 55%;" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$1074</span> for $294</div>
+            <div class="piscando" id="texto">+ Free Shipping</div><br>
+        </div>
+    </div>
+
+      <!-- Página da garantia -->
+      <div class="container" style="margin-top: 60px;">
+        <img src="img/garanted.webp" style="width: 39%;">
+        <div class="footer-text" style="text-align: center;"><b>180-DAY Money Back Guarantee</b> - Just send us the bottles, even if they're</div>
+         <div class="footer-text" style="text-align: center;">empty and get a complete refund, no questions asked.</div>
+        <img src="img/stamps.webp" style="width: 39%; margin-bottom: 60px; margin-top: 20px;">
+    </div>
+    <!-- Ultimate Formula -->
+    <div class="discount" style="background: #fff;">
+        <div class="column-container" style=" background-color: #f1f1f1; border-radius: 20px; max-width: 500px;">
+            <div class="quality-title ultimate-text" style="font-size: 22px; text-align: initial; font-weight: 400; text-transform: uppercase;">
+                100% satisfaction or your money back! We are giving you a 6-month absolute guarantee on your Sugar Detox kit purchase.
+            </div>
+            <div class="ultimate-text-down"><Br>
+            Sugar Detox comes with a 100% money-back guarantee - a full 6 months from the date of purchase. If you are not completely and entirely satisfied with our product or your results within the first days or months of treatment, simply let us know by calling our toll-free number or sending us an email, and we will gladly refund you in full within 48 hours after the product is returned.<Br><Br>
+            That's right - just return the product, even the empty bottles, at any time within 6 months of purchase, and you will receive a full refund with no questions asked (excluding shipping and handling fees).
+            </div><br>
+            <img src="img/detox.webp" style="width: 100%; border-radius: 15px;">
+
+        </div>
+    </div>      
+
+    <h2 class="section-title" style="font-weight: 500; margin-top: 30px;">Get your discounted Sugar Detox below.</h2><Br>
+    <div class="pricing-table" style="margin-top: -30px;">
+        <!-- First Card -->
+        <div class="containerCard" style="border: 1px solid #585858; border-radius: 10px;"><BR>
+            <h3 >TRY ONE</h3>
+            <div class="subheader">30 days supply</div>
+            <img src="img/1cap.webp" style="width: 35%;">
+            <div class="preco">
+              <span class="simbolo">$</span>89<span class="simbolo">,90</span>
+            </div>
+            <div class="per-bottle">per bottle </div>
+            <a href="#" class="button">Yes! Buy Now <br> Basic Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$179</span> for $89</div>
+            <div class="footer-text">+ Shipping</div><br>
+        </div>
+    
+        <!-- Second Card (Popular) -->
+        <div class="containerCard" style="border: 3px solid #006F1A; border-radius: 15px ;">
+            <div class="popular">Most Popular</div>
+            <div class="subheader">90 days supply</div>
+            <img src="img/3cap.webp" style="width: 50%">
+            <div class="preco">
+              <span class="simbolo">$</span>59<span class="simbolo">,90</span>
+            </div>
+            <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+            <a href="#" class="button">Yes! Buy Now <br> Good Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" style="width: 63%;" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$537</span> for $177</div>
+            <div class="piscando" id="texto" style="">+ Free Shipping</div><br>
+        </div>
+        
+    
+        <!-- Third Card (Best Value) -->
+        <div class="containerCard" style="border: 3px solid #e09b1b; border-radius: 15px ;"">
+            <div class="popular" style="background: #e09b1b;">Best Value</div>
+            <div class="subheader">180 days supply</div>
+            <img src="img/6cap.webp" style="width: 50%">
+            <div class="preco">
+              <span class="simbolo">$</span>49<span class="simbolo">,90</span>
+          </div>
+            <div class="per-bottle">per bottle <br>+ 5 FREE BONUSES</div>
+            <a href="#" class="button">Yes! Buy Now <br> Best Offer</a>
+            <div class="guarantee">
+                <img src="img/creditcards.webp" style="width: 55%;" alt="180 Day Guarantee">
+            </div>
+            <div class="footer-text">180 Day Money-Back Guarantee</div>
+            <div class="footer-text">Total: <span class="strike-through">$1074</span> for $294</div>
+            <div class="piscando" id="texto">+ Free Shipping</div><br>
+        </div>
+    </div>
+
+        <!-- Ultimate Formula -->
+    <div class="container">
+        <div class="discount" style="background: #fff;">
+                <img src="img/end.webp" style="width: 70%; border-radius: 15px;">
+        </div>
+    </div>
+        <div class="container" style="display: flex; max-width: 800px;
+        justify-content: space-between;
+        column-gap: 20px;">
+        <div class="column">
+            <ul class="reference-list">
+                <li>Thomas SS, Kim M, Lee SJ, Cha YS. Anti-obesity effects of purple perilla (Perilla frutescens var.</li>
+                <li>Zhang X, Zhang QX, Wang X, et al. Dietary luteolin activates browning and thermogenesis in mice.</li>
+                <li>Pasupuleti VR, Sammugam L, Ramesh N, Gan SH. Honey, Propolis and Royal Jelly: A review of their potential anti-obesity properties.</li>
+                <li>Zhou SS, Auyeng KK, Yip KM, et al. Stronger anti-obesity effect of white ginseng over red ginseng.</li>
+                <li>Mu Q, Fang X, Li X, et al. Ginsenoside Rb1 promotes browning by regulating PPARγ in 3T3-L1 adipocytes.</li>
+                <li>Kamiya T, Nagamine R, Sameshima-Kamiya M, Tsubata M, Ikeguchi M, Takagaki K. Isoflavones and their anti-obesity effects in rats.</li>
+                <li>Kamiya T, Takano A, Matsuzuka Y, et al. Consumption of Pueraria flower extract reduces obesity in rats.</li>
+            </ul>
+        </div>
+
+        <!-- Second column -->
+        <div class="column">
+            <ul class="reference-list">
+                <li>Xu JH, Liu XZ, Pan W, Zou DJ. Berberine protects against diet-induced obesity by regulating acuta.</li>
+                <li>Wu L, Xia M, Duan Y, et al. Berberine promotes the recruitment and activation of brown adipose tissue.</li>
+                <li>Kunkel SD, Elmore CJ, Bongers KS, et al. Ursolic acid increases muscle mass and reduces obesity.</li>
+                <li>Jung YC, Kim HW, Min BK et al. Inhibitory effect of olive leaf extract on obesity in a high-fat diet.</li>
+                <li>Oi-Kano Y, Kawada T, Watanabe T, et al. Oleuropein from extra virgin olive oil reduces obesity in high-fat diet.</li>
+                <li>Sohn EJ, Kim JM, Kang SH, et al. Restorative effects of Pueraria flower extract.</li>
+                <li>Arias N, Picó C, Teresa Macarulla M, et al. Combination of resveratrol and quercetin.</li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="footer">
+        <p>&copy; 2024 Sugar Detox. All rights reserved.</p>
+    </div>
+</body><script>
+    function toggleAccordion(element) {
+        const content = element.nextElementSibling;
+        const icon = element.querySelector('.accordion-icon');
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.textContent = '▾';
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.textContent = '▴';
+        }
+    }
+</script>
+<script>
+    // Definir os minutos e segundos iniciais
+    let minutes = 10;
+    let seconds = 0;
+
+    // Atualizar o contador a cada segundo
+    const countdown = setInterval(function() {
+        if (seconds === 0) {
+            if (minutes === 0) {
+                clearInterval(countdown); // Para o contador quando chegar a 0
+                document.querySelector('.headline').innerText = "Time's up!";
+            } else {
+                minutes--; // Diminui o minuto quando os segundos chegam a 0
+                seconds = 59;
+            }
+        } else {
+            seconds--; // Diminui os segundos
+        }
+
+        // Atualizar os elementos de minutos e segundos na tela
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+    }, 1000);
+</script>
+
+<!-- COLOCAR SCRITPS DE PIXEL AQUI -->
+
+</html>
+
+
