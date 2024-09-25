@@ -1,7 +1,7 @@
 const contandor = document.querySelector("#contando");
 const transicao = document.querySelector(".transicao");
 
-let tempoRestante = 23;
+let tempoRestante = 1000;
 
 const intervalo = setInterval(() => {
     contandor.textContent = tempoRestante;

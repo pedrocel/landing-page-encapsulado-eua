@@ -36,17 +36,16 @@ main {
 
 footer {
     background-color: #006B1E;
-    height: 56px;
-    width: 100%;
 }
 
 #texto {
-    width: 1140px;
+    width: 100%;
     height: 53px;
     position: relative;
     top: 20px;
     color: white;
     display: flex;
+    padding: 20px;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
@@ -74,8 +73,8 @@ b {
 
 #container {
     background-color: #FFFFFF;
-    height: 3818.27px;
-    width: 847px;
+    height: 100%;
+    width: 50%;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     margin: -60px -2px 0px 5px;
@@ -89,8 +88,8 @@ b {
 }
 
 #muitoTexto {
-    height: 2080px;
-    width: 767px;
+    height: 100%;
+    width: 100%;
 }
 
 .elementor-heading-title {
@@ -172,14 +171,15 @@ b {
 
 #containerBotao {
     height: 136px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #botaoContainer {
-    height: 96px;
-    width: 757px;
+    height: 100%;
+    width: 100%;
     padding: 20px 20px 20px 20px;
     display: flex;
     text-align: center;
@@ -216,8 +216,8 @@ b {
 }
 
 #imagemTicket img {
-    height: 235px;
-    width: 435px;
+    height: 100%;
+    width: 100%;
 }
 
 #textoApenasTemos {
@@ -313,3 +313,66 @@ p {
     unicode-bidi: isolate;
 }
 
+@media (max-width: 768px) {
+    #texto1 {
+        color: #000000;
+        font-family: "Arial", Sans-serif;
+        font-size: 2px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.3em;
+        letter-spacing: -1.2px;
+    }
+
+    .elementor-heading-title {
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        color: #020202;
+        font-family: "Arial", Sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.6em;
+        letter-spacing: -1.2px;
+    }
+
+    #textoEspecial {
+        color: #7A7A7A;
+        font-family: "Arial", Sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.3em;
+        letter-spacing: -1.2px;
+    }
+
+    #textoEspecial1 {
+        color: #000000;
+        font-family: "Arial", Sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.3em;
+        letter-spacing: -1.2px;
+    }
+
+    .textinho h1 {
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+
+    #container {
+        background-color: #FFFFFF;
+        height: 100%;
+        width: 80%;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        margin: -60px -2px 0px 5px;
+        --e-column-margin-right: -2px;
+        --e-column-margin-left: 5px;
+        padding: 40px 40px 40px 40px;
+        border-radius: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
