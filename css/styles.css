@@ -185,7 +185,7 @@
     display: flex;
     justify-content: center; /* Centraliza horizontalmente os itens */
     align-items: center; /* Centraliza verticalmente os elementos */
-    margin-top: 50px;
+    margin-top: 10px;
     gap: 10px; /* Controla o espaçamento entre os containers */
 }
 
@@ -745,6 +745,12 @@ h2 {
     width: 50%;
 }
 
+.containerDescription{
+    text-align: center; 
+    width: 100%; 
+    font-size: 15px; 
+    margin-top: 20px;
+}
 /* responsividade */
 
 @media (max-width: 768px) {
@@ -756,6 +762,7 @@ h2 {
         width: 100%; /* Cada card ocupa 100% da largura */
         max-width: none; /* Remove o limite máximo de 300px */
         margin: 35px;
+        margin-bottom: -20px;
     }
     .garanted-img {
         width: 100%;

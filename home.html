@@ -16,14 +16,17 @@
         <!-- COLOCAR O SCRIPT DO VTURB AQUI -->
         <div class="timer">
             <div class="time-box">
-                <span id="minutes">10</span>
+                <span class="minutes">10</span>
                 <div class="time-label">Minutes</div>
             </div>
             <div class="time-box">
-                <span id="seconds">00</span>
+                <span class="seconds">00</span>
                 <div class="time-label">Seconds</div>
             </div>
         </div>
+        
+        
+        
     </div>
 <!-- Página dos preços -->
     <div class="pricing-table component hidden">
@@ -127,7 +130,7 @@
                 <h1 class="quality-title" style="text-align: center; font-weight: bold;">100% Quality Assurance</h1>
 
                 <!-- Description -->
-                <div class="container" style="text-align: center; width: 50%; font-size: 15px; margin-top: 20px;">
+                <div class="containerDescription">
                     Sugar Detox is manufactured to standards above and beyond what is required by the FDA and Good Manufacturing Standards.
                     We 3rd-party test every batch to make sure you get only the highest quality product possible.
                     Our name is on the line and we stand by every bottle of Sugar Detox we sell.
@@ -135,7 +138,7 @@
 
                 <!-- Certification Icons -->
                 <div class="garanted-img">
-                    <img class="img-responsive" src="img/usa.webp" style="margin-bottom: 60px; margin-top: 20px;">
+                    <img class="img-responsive" src="img/usa.webp" style="margin-bottom: 30px; margin-top: 20px;">
                 </div>
             </div>
     </div>
@@ -144,12 +147,22 @@
     <div class="discount component hidden" style="background: #E6E6E6; ">
         <div class="quality-title" style="font-weight: bold;">Claim Your Discounted Sugar Detox®<br> Below While Supplies Last</div>
         <div class="timer" style="margin-top: 20px;">
-            <div class="discount-time-box" style="color: #fff;">
+            <div class="discount-time-box" >
                 <span id="minutes">10</span>
                 <div class="time-label">Minutes</div>
             </div>
             <div class="discount-time-box" style="color: #fff; margin-bottom: 20px;">
                 <span id="seconds">00</span>
+                <div class="time-label">Seconds</div>
+            </div>
+        </div>
+        <div class="timer">
+            <div class="time-box" style="color: #fff;">
+                <span class="minutes">5</span>
+                <div class="time-label">Minutes</div>
+            </div>
+            <div class="time-box" style="color: #fff;">
+                <span class="seconds">30</span>
                 <div class="time-label">Seconds</div>
             </div>
         </div>
@@ -477,7 +490,7 @@
 
     <div class="container component hidden">    
         <section class="benefits-section component hidden">
-            <div class="text-content" style="margin-top: 20px;"" >
+            <div class="text-content" style="margin-top: 20px;" >
                 <div class="ultimate-text">Are You Struggling with Lack of Energy, Feeling Unmotivated to Enjoy Life, and Mental Fog?</div><br>
                 <div class="ultimate-text-down">Control your blood sugar levels, increase your energy throughout the day, maintain a healthy mind, and ensure many more years of life alongside your loved ones.</div><br>
                 <div class="ultimate-text-down">The sugar sponge in your blood activated by Sugar Detox is the key to regaining control of your health and life, and reversing type 2 diabetes forever!</div><Br>
@@ -510,7 +523,7 @@
     <div class="container component hidden">
     <h2 class="section-title" style="font-weight: 500; margin-top: 30px;">Get your discounted Sugar Detox below.</h2><Br>
         <div class="pricing-table" style="margin-top: -30px;">
-            <div class="containerCard" style="border: 1px solid #585858; border-radius: 10px;"><BR>
+            <div class="containerCard" style="border: 1px solid #585858; border-radius: 10px; margin-bottom: -45px;"><BR>
                 <h3 >TRY ONE</h3>
                 <div class="subheader">30 days supply</div>
                 <img src="img/1cap.webp" style="width: 35%;">
@@ -689,30 +702,52 @@
             icon.textContent = '▴';
         }
     }
-</script>
-<script>
-    // Definir os minutos e segundos iniciais
-    let minutes = 10;
-    let seconds = 0;
+    // Seleciona todos os temporizadores
+const timers = document.querySelectorAll('.timer');
 
-    // Atualizar o contador a cada segundo
+timers.forEach(timer => {
+    // Seleciona os elementos de minutos e segundos
+    let minutesElement = timer.querySelector('.minutes');
+    let secondsElement = timer.querySelector('.seconds');
+
+    // Verifica se ambos os elementos existem
+    if (!minutesElement || !secondsElement) {
+        console.error('Elementos de minutos ou segundos não encontrados.');
+        return; // Sai do loop para este timer se os elementos não existirem
+    }
+
+    // Converte o valor do texto para números
+    let minutes = parseInt(minutesElement.textContent);
+    let seconds = parseInt(secondsElement.textContent);
+
+    // Verifica se as conversões para números são válidas
+    if (isNaN(minutes) || isNaN(seconds)) {
+        console.error('Os valores de minutos ou segundos são inválidos.');
+        return;
+    }
+
+    // Configura o intervalo para o contador
     const countdown = setInterval(function() {
         if (seconds === 0) {
             if (minutes === 0) {
-                clearInterval(countdown); // Para o contador quando chegar a 0
-                document.querySelector('.headline').innerText = "Time's up!";
+                clearInterval(countdown); // Para o contador quando chega a 0
+                console.log('Tempo esgotado!'); // Pode substituir por uma ação desejada
             } else {
-                minutes--; // Diminui o minuto quando os segundos chegam a 0
+                minutes--; // Diminui os minutos quando os segundos chegam a 0
                 seconds = 59;
             }
         } else {
             seconds--; // Diminui os segundos
         }
 
-        // Atualizar os elementos de minutos e segundos na tela
-        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-    }, 1000);
+        // Atualiza os elementos de minutos e segundos na tela
+        if (minutesElement && secondsElement) {
+            minutesElement.textContent = minutes.toString().padStart(2, '0'); // Formata para 2 dígitos
+            secondsElement.textContent = seconds.toString().padStart(2, '0'); // Formata para 2 dígitos
+        }
+    }, 1000); // Intervalo de 1 segundo (1000 milissegundos)
+});
+
 
     function ativarComponentes() {
         const componentes = document.querySelectorAll('.component');
@@ -722,7 +757,7 @@
     }
 
     // const tempoEspera = (40 * 60 + 50) * 1000; // 40 minutos e 50 segundos
-    const tempoEspera = 1; // 40 minutos e 50 segundos
+    const tempoEspera = 100; // 40 minutos e 50 segundos
     setTimeout(ativarComponentes, tempoEspera);
 </script>
 
