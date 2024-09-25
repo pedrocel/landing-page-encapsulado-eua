@@ -702,62 +702,53 @@
             icon.textContent = '▴';
         }
     }
-    // Seleciona todos os temporizadores
-const timers = document.querySelectorAll('.timer');
+    const timers = document.querySelectorAll('.timer');
 
-timers.forEach(timer => {
-    // Seleciona os elementos de minutos e segundos
+    timers.forEach(timer => {
     let minutesElement = timer.querySelector('.minutes');
     let secondsElement = timer.querySelector('.seconds');
 
-    // Verifica se ambos os elementos existem
     if (!minutesElement || !secondsElement) {
         console.error('Elementos de minutos ou segundos não encontrados.');
-        return; // Sai do loop para este timer se os elementos não existirem
     }
 
-    // Converte o valor do texto para números
     let minutes = parseInt(minutesElement.textContent);
     let seconds = parseInt(secondsElement.textContent);
 
-    // Verifica se as conversões para números são válidas
     if (isNaN(minutes) || isNaN(seconds)) {
         console.error('Os valores de minutos ou segundos são inválidos.');
         return;
     }
 
-    // Configura o intervalo para o contador
     const countdown = setInterval(function() {
         if (seconds === 0) {
             if (minutes === 0) {
-                clearInterval(countdown); // Para o contador quando chega a 0
-                console.log('Tempo esgotado!'); // Pode substituir por uma ação desejada
+                clearInterval(countdown); 
             } else {
-                minutes--; // Diminui os minutos quando os segundos chegam a 0
+                minutes--; 
                 seconds = 59;
             }
         } else {
-            seconds--; // Diminui os segundos
+            seconds--; 
         }
 
-        // Atualiza os elementos de minutos e segundos na tela
         if (minutesElement && secondsElement) {
-            minutesElement.textContent = minutes.toString().padStart(2, '0'); // Formata para 2 dígitos
-            secondsElement.textContent = seconds.toString().padStart(2, '0'); // Formata para 2 dígitos
+            minutesElement.textContent = minutes.toString().padStart(2, '0'); 
+            secondsElement.textContent = seconds.toString().padStart(2, '0'); 
         }
-    }, 1000); // Intervalo de 1 segundo (1000 milissegundos)
+    }, 1000); 
 });
 
 
     function ativarComponentes() {
         const componentes = document.querySelectorAll('.component');
         componentes.forEach(componente => {
-            componente.classList.remove('hidden'); // Remove a classe 'hidden' para mostrar os componentes
+            componente.classList.remove('hidden');
         });
     }
 
     // const tempoEspera = (40 * 60 + 50) * 1000; // 40 minutos e 50 segundos
-    const tempoEspera = 100; // 40 minutos e 50 segundos
+    const tempoEspera = 10000; // teste
     setTimeout(ativarComponentes, tempoEspera);
 </script>
 
