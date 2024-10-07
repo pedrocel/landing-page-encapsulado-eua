@@ -9,7 +9,7 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-/* Header */
+
 .header {
     background: linear-gradient(180deg, #089948 0%, #003618 100%);
     color: white;
@@ -37,22 +37,21 @@
     justify-content: center;
     align-items: center;
     background-color: #0000007d;
-    padding: 20px;
+    padding: 13px;
     border-radius: 10px;
-    width: 100px;
-    height: 120px;
 }
 
 .time-box span {
-    font-size: 36px;
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
 }
 
 .time-label {
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 8px;
+    margin-top: -4px;
 }
 
-/* Pricing Section */
 .pricing-section {
     display: flex;
     justify-content: space-between;
@@ -152,7 +151,6 @@
     font-size: 1em;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
     .pricing-card, .testimonial {
         width: 100%;
@@ -173,7 +171,6 @@
     }
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -183,10 +180,10 @@
 .pricing-table {
     flex-wrap: wrap;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente os itens */
-    align-items: center; /* Centraliza verticalmente os elementos */
+    justify-content: center;
+    align-items: center; 
     margin-top: 10px;
-    gap: 10px; /* Controla o espaçamento entre os containers */
+    gap: 10px; 
 }
 
 
@@ -202,11 +199,11 @@
 
 
 body {
-    margin: 0; /* Remove margens padrão do corpo da página */
+    margin: 0; 
     padding: 0;
     font-family: Sora;
     background-color: #fff;
-    font-family: 'Sora', sans-serif; /* Aplicando a fonte Sora ao corpo do documento */
+    font-family: 'Sora', sans-serif; 
 }
 
 .product-cart button{
@@ -265,7 +262,7 @@ body {
 
 .per-bottle {
     font-size: 14px;
-    color: #666;
+    color: #000;
 }
 
 .bonuses {
@@ -276,7 +273,7 @@ body {
 
 .button {
     background-image: linear-gradient(180deg, #FFBE00 0%, #D8A100 100%);
-    color: #333;
+    color: #000;
     padding: 10px 20px;
     border-radius: 100px;
     text-transform: uppercase;
@@ -285,6 +282,7 @@ body {
     margin-top: 10px;
     width: 70%;
     margin-bottom: 5px;
+    text-decoration: none;
 }
 
 .guarantee {
@@ -297,8 +295,18 @@ body {
 
 .footer-text {
     font-size: 13px;
-    color: #666;
+    color: #000;
     margin-top: 10px;
+}
+
+.footer-text-desktop {
+    font-size: 13px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.footer-text-mobile {
+    display: none;
 }
 
 .footer-text .strike-through {
@@ -317,30 +325,39 @@ body {
 }
 
 .container img {
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto; 
     display: block;
-    margin: 0 auto; /* Centraliza a imagem dentro do container */
+    margin: 0 auto; 
 }
 
 .piscando {
     font-size: 24px;
-    color: #074703; /* Cor do texto */
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    color: #074703; 
+    animation: piscar 1s infinite; 
     margin-top: 10px;
 }
-.piscando.faded {
-    opacity: 0;
+
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .preco {
-    font-family: 'Sora', sans-serif; /* Aplicando a fonte Sora ao preço */
-    font-size: 70px; /* Tamanho da fonte para o valor */
+    font-family: 'Sora', sans-serif;
+    font-size: 70px; 
     font-weight: 600;
     color: #000;
 }
 .preco .simbolo {
-    font-size: 0.5em; /* Tamanho reduzido do símbolo $ */
+    font-size: 0.5em; 
     position: relative;
 }
 .promo-banner {
@@ -415,10 +432,19 @@ body {
 }
 
 .quality-title {
-    font-weight: 500;
-    font-size: 34px;
+    font-weight: 400;
+    font-size: 30px;
     line-height: 34px;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.satisfaction-title-text {
+    font-size: 22px; 
+    text-align: initial; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    color: #000;
 }
 
 .discount {
@@ -448,13 +474,15 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 10px;
 }
 
 .image-item img {
     width: 100%;
     height: 300px;
-    padding: 15px;
+    padding: 0px;
     border-radius: 15px;
+    display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -463,7 +491,7 @@ body {
 }
 
 .hidden {
-    display: none; /* Oculta os elementos */
+    display: none; 
 }
 
 .column-container {
@@ -501,10 +529,17 @@ body {
 
 .ultimate-text {
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px; 
+    text-align: initial;
+    font-weight: 400; 
+    text-transform: uppercase;
 }
 
 .ultimate-text-down {
     font-size: 13px;
+    text-align: initial;
+    margin-left: 0; 
+    margin-right: 0;
     font-weight: 500;
 }
 
@@ -516,8 +551,10 @@ body {
 
 .section-title {
     font-size: 24px;
-    margin-bottom: 40px;
     color: #000000;
+    font-weight: 500; 
+    margin-top: 35px; 
+    margin-bottom: 80px;
 }
 
 .ingredients-grid {
@@ -529,8 +566,12 @@ body {
 .ingredient-card {
     background-color: #f1f1f1;
     border-radius: 10px;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
+    margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -605,6 +646,7 @@ h2 {
     overflow: hidden;
     transition: max-height 0.3s ease;
     padding: 0 15px;
+    text-align: initial;
     background-color: #f9f9f9;
 }
 
@@ -619,6 +661,7 @@ h2 {
 }
 
 .benefits-section {
+    width: 95%;
     margin: 0 auto;
     flex-wrap: wrap;
     padding: 40px;
@@ -629,9 +672,14 @@ h2 {
     border-radius: 15px;
 }
 
-.text-content {
+.text-content-desktop {
+    display: block; /* Mostra conteúdo desktop */
     flex: 1;
-    padding-right: 40px;
+    padding-right: 30px;
+}
+
+.text-content-mobile {
+    display: none; /* Esconde conteúdo mobile */
 }
 
 .text-content h1 {
@@ -676,15 +724,15 @@ h2 {
 
 .benefit-item {
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 20px 15px 15px 15px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 17px;
 }
 
 .benefit-item span {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #333;
     margin-right: 10px;
 }
@@ -699,11 +747,11 @@ h2 {
     counter-reset: ref-list;
 }
 
-.reference-list li {
+.reference-list lis {
     counter-increment: ref-list;
     margin-bottom: 15px;
-    line-height: 1.5;
-    font-size: 11px;
+    line-height: -0px;
+    font-size: 9px;
     color: #5A5A5A;
 }
 
@@ -716,7 +764,8 @@ h2 {
 
 
 .column {
-    flex: 1;
+    width: 50%;
+    display: 1;
     padding: 10px;
 }
 
@@ -743,6 +792,8 @@ h2 {
 
 .img-responsive{
     width: 50%;
+    border: 15px;
+    display: block;
 }
 
 .containerDescription{
@@ -750,18 +801,61 @@ h2 {
     width: 100%; 
     font-size: 15px; 
     margin-top: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
-/* responsividade */
+
+.container-arrow-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-svg {
+    width: 45px;
+    margin-bottom: -50px; 
+}
+
+.img-discount{
+    width: 70%; 
+    border-radius: 15px;
+}
+
+.container-headline {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sub-headline {
+    color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.sub-headline-dektop {
+    display: block;
+    color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.sub-headline-mobile {
+    display: none;
+}
 
 @media (max-width: 768px) {
     .pricing-table {
-        justify-content: center; /* Centraliza os cards na tela menor */
+        justify-content: center; 
     }
 
     .containerCard {
-        width: 100%; /* Cada card ocupa 100% da largura */
-        max-width: none; /* Remove o limite máximo de 300px */
-        margin: 35px;
+        width: 100%;
+        max-width: none; 
+        margin: 20px;
         margin-bottom: -20px;
     }
     .garanted-img {
@@ -770,12 +864,191 @@ h2 {
 
     .img-responsive{
         width: 80%;
+        border-radius: 0px;
     }
 
     .quality-title {
         font-weight: 500;
-        font-size: 20px;
-        line-height: 34px;
+        font-size: 18px;
         text-align: center;
+    }
+
+    .promo-banner-content {
+        text-align: center;
+    }
+
+    .containerDescription{
+        text-align: center; 
+        width: 100%; 
+        font-size: 15px; 
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .image-item img {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        border-radius: 15px;
+        display: block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .img-discount{
+        width: 100%; 
+        border-radius: 15px;
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .column-50 {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        margin-top: -20px;
+    }
+
+    .ultimate-text {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px; 
+        margin-left: 0px; 
+        margin-right: 0px;
+        text-align: center;
+        font-weight: 400; 
+        text-transform: uppercase;
+    }
+
+    .ultimate-text-down {
+        font-size: 13px;
+        margin-left: 0px; 
+        margin-right: 00px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .ingredient-card {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        padding-bottom: 27%;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .container-faq {
+        text-align: center;
+        display: flex;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .benefits-section {
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        color: #000000;
+        font-weight: 500; 
+        margin-top: 35px; 
+        margin-bottom: 40px;
+    }
+
+    .text-content-desktop {
+        display: none; /* Esconde conteúdo desktop */
+    }
+
+    .text-content-mobile {
+        display: block; /* Mostra conteúdo mobile */
+        flex: 1;
+        padding-right: 0px;
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        flex: 1;
+    }
+
+    .sub-headline-mobile {
+        display: none;
+    }
+
+    .sub-headline-dektop {
+        display: block;
+        color: #FFFFFF;
+        font-family: "Sora", Sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    .footer-text-desktop {
+        display: none;
+    }
+    
+    .footer-text-mobile {
+        display: block; /* Mostra conteúdo mobile */
+        font-size: 17px;
+        color: #000;
+        margin-top: 10px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .satisfaction-title-text {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 22px; 
+        text-align: center; 
+        font-weight: 400; 
+        text-transform: uppercase; 
+        color: #000;
+    }
+
+    .time-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0000007d;
+        padding: 25px 25px;
+        border-radius: 10px;
+    }
+
+    .sub-headline-dektop {
+        display: none;
+    }
+
+    .sub-headline-mobile {
+        display: block;
+        color: #FFFFFF;
+        font-family: "Sora", Sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 5px;
+        line-height: 36px;
     }
 }
